@@ -24,4 +24,5 @@ print('Count of "is":', zen_of_python.count('is'))
 
 print(zen_of_python.upper())
 
+
 print(zen_of_python.replace("i","&"))

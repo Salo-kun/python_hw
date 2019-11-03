@@ -1,4 +1,9 @@
 num = input('Enter four digit number: ')
+
+while (len(num) != 4 or num.isdigit() == False):
+    num = input("It's not number, or number of digit is not four. Try again: ")
+
+
 num_mult = str(tuple(num))
 num_mult = num_mult.replace("'","")
 num_mult = num_mult.replace(',','*')
