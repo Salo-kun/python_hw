@@ -1,104 +1,129 @@
-##########################################task1
+################################# Task 1
 
-# spusok = list(range(0,100,2))
-# print(spusok)
-
-################################task1.2
-
-#num = []
-
-#for a in range (1,101):
-#    if a%2 == 0:
-#        num.append(a)
-
-
-#print(num)
+# num = []
+# for rem in range(0,100):
+#    if rem%2 == 0:
+#        num.append(rem)
+# print(num)
     
 
-#numer = []
-#count = 0
-#while count <= 100:
+################################# Task 1.1
+
+
+# num = []
+# count = 0
+# while count <= 100:
 #    count += 1
 #    if count%2 == 0:
-#        numer.append(count)
-
-
-#print(numer)
-    
-##################################task 2
-
-#num = []
-
-#for a in range (1,101):
-#    if a%2 == 1:
-#        num.append(a)
-
-
-#print(num)
+#        num.append(count)
+# print(num)
     
 
-#numer = []
-#count = 0
-#while count <= 100:
-#    count += 1
-#    if count%2 == 1:
-#        numer.append(count)
+################################# Task 2
 
 
-#print(numer)
+# for num in range(0,100):
+#     if num%2 == 0:
+#         continue
+#     print(num)
 
 
-################################task3
-
-#numberl = (8, 2, 6, 10, 12, 12)
-#for a in numberl:
-#    if a % 2 != 0:
-#        print("Odd number")
-#        break
-#else:
-#    print("All numbers is even") 
+################################# Task 2.1    
 
 
-#################################task4
-
-#i = 0
-#islist = [1,100]
-#while i < len(islist):
-#    islist[i] = float(islist[i])
-#    i += 1
-#print(islist)
+# for num in range(1,100,2):
+#     print(num)
 
 
-#################################task5
-
-#n = int(input('Input num for start: '))
-#n1 = 0
-#n2 = 1
-#i = 0
-#while i < n:
-#     summary = n1 + n2
-#     print(n1)
-#     n2 = n1
-#     n1 = summary
-#     i += 1
-
-################################task6
+################################# Task 3
 
 
-#word = ['cont', 'folk', 'synth', 'jump']
-#for step in word:
+# num = (8, 2, 22, 10, 22, 12)
+# for a in num:
+#     if a%2 != 0:
+#         print("List have odd number")
+#         break
+# else:
+#     print("All numbers is even") 
+
+
+################################# Task 4
+
+
+# num_list=[0, 23, 122, 855, 2, 32, 46, 100]
+# for num in num_list:
+#    print(float(num))
+
+
+################################# Task 5
+
+
+# n = int(input('Enter number for start: '))
+# a , b = 0, 1
+# for fib in range(n):
+#     print (a)
+#     a, b = b, b + a
+    
+
+################################# Task 6
+
+
+# word = ['control', 'folk', 'synth', 'jump']
+# for step in word:
 #    print(step)
 
 
-###############################task7
+################################# Task 7
 
-#wordlist = ['cont', 'folk', 'synth', 'jump']
-#for step in wordlist:
+
+# wordlist = ['control', 'folk', 'synth', 'jump']
+# for step in wordlist:
 #    for char in step:
 #        print(char, end = '#')
 
 
-##############################task8
+################################# Task 8
 
-numb = input('Insert number ')
+
+# def simple(num):
+#     check = True
+#     for a in range(2,num):
+#         if num%a == 0:
+#             check = False
+#             break
+#     if check:
+#         return print("It's prime number")
+#     else:
+#         return print("It's complex number")
+
+
+# simple(int(input("Enter number for check: ")))
+
+
+################################ Task 9
+
+
+# from random import random
+
+
+# num = random()
+# print(num)
+# print(max(list(str(num))))
     
+    
+################################ Task 10
+
+
+# word = input('Enter word for check: ')
+# for step in range(len(word)):
+#     if word[step] != word[-1 - step]:
+#         print ("Isn't palindrom")
+#         break
+# else:
+#     print ("Is palindrom")
+
+
+
+       
+
+
