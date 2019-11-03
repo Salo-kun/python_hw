@@ -33,7 +33,9 @@
 
 # for num in range(1,100,2):
 #     print(num)
+################################# Task 2.3
 
+#print(list(range(1,100,2)))
 
 ################################# Task 3
 
@@ -59,7 +61,7 @@
 
 
 # n = int(input('Enter number for start: '))
-# a , b = 0, 1
+# a, b = 0, 1
 # for fib in range(n):
 #     print (a)
 #     a, b = b, b + a
