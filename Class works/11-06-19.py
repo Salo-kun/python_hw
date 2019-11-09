@@ -49,7 +49,7 @@
 
 # num = int(input('Enter number: '))
 # while num < 1:
-#   num = int(input('Try again: '))
+#   num = int(input('Negative or zero number. Try again: '))
 # a = 1
 # for i in range (1,num+1):
 #   a *= i
@@ -68,20 +68,21 @@
 ############################ Task 5
 
 
-# lst = [int(input('Enter num: ')) for i in range(int(input('Enter lenght of list: ')))]
-# check = lst[1]
-# step = 1
-# while check > 1: 
-#     check = lst[step]
-#     step += 1
+# num = int(input('Enter number: '))
+# while num > 0:
+#     num = int(input('Enter number: '))
+# else: 
+#     print('Negative or zero')
 
-# print('Negative or zero in list: {}'.format(check))
-
-
-############################# Task 6
+############################ Task 6
 
 
-
-
-                
+# lst = int(input('Enter lenght of list: '))
+# num = int(input('Enter number: '))
+# for i in range(0, lst):
+#     if num > 0:
+#         num = int(input('Enter number: '))
+#     else:
+#         print('Negative or zero number')
+#         break
 
