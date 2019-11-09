@@ -63,16 +63,16 @@
 #     b = float(input('Enter lenght of rectangle second side in meter: '))
 #     print('Area of rectangle is {0:.3f} m^2'.format(calc_area_rectangle(a, b)))
 # elif choise == 2:
-#     a = float(input('Enter lengt of tiangle first side in meter: '))
-#     b = float(input('Enter lengt of tiangle second side in meter: '))
-#     c = float(input('Enter lengt of tiangle third side in meter: '))
+#     a = float(input('Enter lenght of tiangle first side in meter: '))
+#     b = float(input('Enter lenght of tiangle second side in meter: '))
+#     c = float(input('Enter lenght of tiangle third side in meter: '))
 #     test = (a, b, c)
 #     sor = sorted(test)
 #     while sor[2] >= sor[0] + sor[1]:
 #         print("It's not a triangle. Try again")
-#         a = float(input('Enter lengt of tiangle first side in meter: '))
-#         b = float(input('Enter lengt of tiangle second side in meter: '))
-#         c = float(input('Enter lengt of tiangle third side in meter: '))
+#         a = float(input('Enter lenght of tiangle first side in meter: '))
+#         b = float(input('Enter lenght of tiangle second side in meter: '))
+#         c = float(input('Enter lenght of tiangle third side in meter: '))
 #         test = (a, b, c)
 #         sor = sorted(test)
 
