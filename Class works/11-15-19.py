@@ -33,68 +33,62 @@
 # pygame.quit()
 
 ########################## Task 2
-from tkinter import *
-from random import choice
-import time
-root = Tk()
-root.geometry('800x600')
-root.title('Relax')
-c = Canvas(root,bg='DeepSkyBlue2')
-c.pack(fill=BOTH,expand=1)
-colors = ['red','orange','yellow','green']
-ball = c.create_oval(375,275,425,325, fill = choice(colors), width=0)
-ball_x_move = 1
-ball_y_move = -1
+
+
+# from tkinter import *
+# from random import choice
+# root = Tk()
+# root.geometry('800x600')
+# root.title('Relax')
+# c = Canvas(root,bg='DeepSkyBlue2')
+# c.pack(fill=BOTH,expand=1)
+# colors = ['red','orange','yellow','green','pink']
+# ball = c.create_oval(375,275,425,325, fill = choice(colors), width=0)
+# ball_x_move = int(choice(['1', '-1']))
+# ball_y_move = int(choice(['1', '-1']))
 
 
 
-def move_ball():
-    c.move(ball, ball_x_move, ball_y_move)
-
-def main():
-    move_ball()
-    coords_check()
-    root.after(5, main)
-    
+# def move_ball():
+#     c.move(ball, ball_x_move, ball_y_move)
    
-def coords_check():
-    global ball_x_move, ball_y_move
-    x = int(c.coords(ball)[0]) + 25
-    y = int(c.coords(ball)[3]) - 25
-    if ball_x_move == 1 and ball_y_move == 1:
-        direction = 'SE'
-    if ball_x_move == 1 and ball_y_move == -1:
-        direction = 'NE'
-    if ball_x_move == -1 and ball_y_move == -1:
-        direction = 'NW'
-    if ball_x_move == -1 and ball_y_move == 1:
-        direction = 'SW'
+   
+# def coords_check():
+#     global ball_x_move, ball_y_move
+#     x = int(c.coords(ball)[0]) + 25
+#     y = int(c.coords(ball)[3]) - 25
         
-    if x > 775 and direction == 'SE':
-        ball_x_move = -1
-        ball_y_move = 1     
-    if x > 775 and direction == 'NE':
-        ball_x_move = -1
-        ball_y_move = -1
-    if x < 25 and direction == 'SW':
-        ball_x_move = 1
-        ball_y_move = 1
-    if x < 25 and direction == 'NW':
-        ball_x_move = 1
-        ball_y_move = -1
-    if y > 575 and direction == 'SE':
-        ball_x_move = 1
-        ball_y_move = -1
-    if y > 575 and direction == 'SW':
-        ball_x_move = -1
-        ball_y_move = -1
-    if y < 25 and direction == 'NE':
-        ball_x_move = 1
-        ball_y_move = 1  
-    if y < 25 and direction == 'NW':
-        ball_y_move = -1
-        ball_y_move = 1
+#     if x > 775 and ball_x_move == 1 and ball_y_move == 1:
+#         ball_x_move = -1
+#         ball_y_move = 1     
+#     if x > 775 and ball_x_move == 1 and ball_y_move == -1:
+#         ball_x_move = -1
+#         ball_y_move = -1
+#     if x < 25 and ball_x_move == -1 and ball_y_move == 1:
+#         ball_x_move = 1
+#         ball_y_move = 1
+#     if x < 25 and ball_x_move == -1 and ball_y_move == -1:
+#         ball_x_move = 1
+#         ball_y_move = -1
+#     if y > 575 and ball_x_move == 1 and ball_y_move == 1:
+#         ball_x_move = 1
+#         ball_y_move = -1
+#     if y > 575 and ball_x_move == -1 and ball_y_move == 1:
+#         ball_x_move = -1
+#         ball_y_move = -1
+#     if y < 25 and ball_x_move == 1 and ball_y_move == -1:
+#         ball_x_move = 1
+#         ball_y_move = 1  
+#     if y < 25 and ball_x_move == -1 and ball_y_move == -1:
+#         ball_y_move = -1
+#         ball_y_move = 1
         
+
+# def main():
+#     move_ball()
+#     coords_check()
+#     root.after(10, main)
+    
         
-main()     
-mainloop()
+# main()     
+# mainloop()
